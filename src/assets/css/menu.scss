@@ -1,0 +1,24 @@
+.menu {
+    width: 100%;
+    bottom: 0px;
+    position: fixed;
+    z-index: 999;
+  }
+  
+
+.addButton {
+    position: fixed!important;
+    right: 50px;
+    bottom: 30px;
+    z-index: 99999;
+}
+
+.icon-menu {
+    height: 30px;
+    stroke-width: 1;
+    stroke: rgba(0, 0, 0, 0.5);
+}
+
+#icon-add {
+    height: 25px;
+}

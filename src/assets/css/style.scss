@@ -1,0 +1,63 @@
+@import "typography";
+@import "menu";
+@import "card";
+@import "add";
+
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #f1f1f1;
+}
+
+.logo {
+  fill: white;
+  height: 50px;
+}
+
+#topbar {
+  height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#icon-empty {
+  width: 100px;
+  fill: #ccc;
+}
+
+.service_wrapper{
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  color: #bbb;
+}
+
+.categoryTabs {
+  margin-bottom: 30px;
+}
+
+.icon-close {
+width: 30px;
+opacity: 0.6;
+cursor: pointer;
+}
+
+.MuiCardHeader-action {
+  align-self: flex-end!important;
+}
+
+.percentage_slider {
+  width: 85%!important;
+  display: inline-flex!important;
+  padding: 13px 0;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent;
+  height: 50px;
+  align-items: flex-start!important;
+  margin-left: 5%;
+  margin-top: 30px;
+  margin-bottom: 30px!important;
+}
