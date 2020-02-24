@@ -76,76 +76,8 @@ const AddNewItem = props => {
       setError({
         formValid: true
       });
-      console.log(item.name.length);
     }
   };
-
-  // const [errors, setErrors] = useReducer(
-  //   (state, newState) => ({ ...state, ...newState }),
-  //   {
-  //     formErrors: { name: "", category: "" },
-  //     nameValid: false,
-  //     categoryValid: false,
-  //     formValid: false
-  //   }
-  // );
-
-  // useEffect(() => {
-  //   // console.log(item)
-  //   if (isMountedRef.current) {
-  //     setErrors({
-  //       formValid: errors.nameValid && errors.categoryValid
-  //     });
-  //     isMountedRef.current = false;
-  //     //   console.log(isMountedRef.current);
-  //   }
-  // }, [errors]);
-
-  // const validateField = (fieldName, value) => {
-  //   let fieldValidationErrors = errors.formErrors;
-  //   let nameValid = errors.nameValid;
-  //   let categoryValid = errors.categoryValid;
-
-  //   switch (fieldName) {
-  //     case "name":
-  //       nameValid = value.length > 1;
-  //       fieldValidationErrors.name = nameValid ? "" : " is invalid";
-  //       break;
-  //     case "category":
-  //       categoryValid = value.length > 0;
-  //       fieldValidationErrors.category = categoryValid
-  //         ? ""
-  //         : " cannot be empty";
-  //       break;
-  //     default:
-  //       break;
-  //   }
-
-  //   setErrors({
-  //     formErrors: fieldValidationErrors,
-  //     nameValid: nameValid,
-  //     categoryValid: categoryValid,
-  //     formValid: errors.nameValid && errors.categoryValid
-  //   });
-  // };
-
-  // // NON FUNZIONA QUESTO
-
-  // const mapErrors = () => {
-  //   errors.formErrors.map((fieldName, i) => {
-  //     if (errors.formErrors[fieldName].length > 0) {
-  //       return (
-  //         <p key={i}>
-  //           {fieldName} {errors.formErrors[fieldName]}
-  //         </p>
-  //       );
-  //     } else {
-  //       return "";
-  //     }
-  //   });
-  // };
-
-  // HOW DA HELL COULD I AVOID THE CHANGE AFTER ANOTHER CLICK???
 
   const handleChange = e => {
     const name = e.target.name;

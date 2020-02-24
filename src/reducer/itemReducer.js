@@ -32,22 +32,7 @@ const initialState = {
   ],
 
   items: [
-    // {
-    //   key: 2,
-    //   name: "test",
-    //   percentage: 90,
-    //   infridge: true,
-    //   saved: true,
-    //   category: 2
-    // },
-    // {
-    //   key: 3,
-    //   name: "test 2",
-    //   percentage: 90,
-    //   infridge: true,
-    //   saved: false,
-    //   category: 1
-    // }
+
   ]
 };
 
@@ -84,18 +69,6 @@ const reducer = (state = initialState, action) => {
       );
 
       if (selectedItem) {
-        //  selectedItem.infridge = !selectedItem.saved;
-        // return {
-        //   ...state,
-        //   items: [
-        //     ...(state.items.map(item => item.key == action.payload ?
-        //     {
-        //       ...item,
-        //       infridge: false
-        //     } : item ))
-        //   ]
-        // }
-        console.log(selectedItem)
         return {
           ...state,
           items: [
@@ -121,8 +94,6 @@ const reducer = (state = initialState, action) => {
       };
 
     case "FILTER_CATEGORY":
-      //console.log(myObj)
-      // const filterByCategory = state.categories.find( item => item.id === action.categoryid )
       return {
         ...state,
         selectedCategory: action.categoryid

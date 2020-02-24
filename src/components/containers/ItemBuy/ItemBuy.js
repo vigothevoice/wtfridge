@@ -59,19 +59,6 @@ const ItemBuy = props => {
     } 
   };
 
-  // const handleChange = (e,key) => {
-  //   setCheck({checkedA: e.target.checked});
-  //   if (e.target.name === "saveItem") {
-  //     if (e.target.checked === true ) {
-  //       dispatch(editItem(key, "saved", true));
-  //       firebase.update(`items/${key}`, {"saved": true})
-  //     } else {
-  //       dispatch(editItem(key, "saved", false));
-  //       firebase.update(`items/${key}`, {"saved": false})
-  //   }
-  // }
-  // }
-
 
   return (
     <Card key={props.id} className="item_card" variant="outlined">
@@ -83,12 +70,7 @@ const ItemBuy = props => {
       }
     ></CardHeader>
     <CardContent>
-    {/* <FormControlLabel
-        control={
-          <Switch name="saveItem" checked={check.checkedA} onChange={e => handleChange(e, props.id)} value="checkedA" />
-        }
-        label="Save item for later"
-      />       */}
+
         {conditionalButton()}
 
       <Dialog open={modal} key={props.id}>
@@ -100,33 +82,7 @@ const ItemBuy = props => {
       </Dialog>
     </CardContent>
   </Card>
-  //   <div key={props.id}>
-  //     <p>{props.name}</p>
-  //     <label>
-  //       <input name="saveItem" checked={props.saved} onChange={e => handleChange(e, props.id)} type="checkbox" onClick={e => handleClick(e, props.id)} />
-  //       Save for later
-  //     </label>
-  //     {/* <button onClick={e => handleClick(e, props.id)} name="deleteItem">
-  //       Delete
-  //     </button> */}
-  //     {conditionalButton()}
 
-  //     <button onClick={handleClickOpen}>Delete</button>
-  //     <Dialog
-  //       open={modal}
-  //       key={props.id}
-  //     >
-  //       <Modal
-  //         ItemName={props.name}
-  //         onClose={handleClickClose}
-  //         click={e => handleClick(e, props.id)}
-  //         name="deleteItem"
-  //       ></Modal>
-
-  //     </Dialog>
-
-  //   </div>
-  // );
   )};
 
 export default ItemBuy;

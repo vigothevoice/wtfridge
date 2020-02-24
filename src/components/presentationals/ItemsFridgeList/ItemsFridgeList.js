@@ -55,8 +55,6 @@ const ItemsFridgeList = () => {
    const itemToDisplay = () => {
      if (selectedCategory === "all" && inFridgeIngredients.length > 0) {
        return notFilteredElements
-    //  } if (inFridgeIngredients.length === 0) {
-    //    return  <ServiceEmpty></ServiceEmpty>
      } if (selectedCategory !== "all") {
        return filteredElements
    }}
@@ -71,17 +69,6 @@ const ItemsFridgeList = () => {
         </Typography>
       {itemToDisplay()}
     
-
-      {/* {arrayInFridge.map(mapped => (
-        
-        <ItemFridge 
-          id={mapped.key} 
-          name={mapped.name} 
-          percentage={mapped.percentage}
-          category={mapped.category}>
-        </ItemFridge>
-      ))
-      } */}
     </>
   );
 };
